@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simple Runner</string>
+
+    <string name="home_empty_title">No runs yet</string>
+    <string name="home_empty_body">Your finished runs will show up here.</string>
+    <string name="home_start_run">Start run</string>
+
+    <string name="active_run_title">Current run</string>
+    <string name="active_run_finish">Finish</string>
+    <string name="label_distance">Distance</string>
+    <string name="label_time">Time</string>
+    <string name="label_pace">Pace</string>
+    <string name="unit_km">km</string>
+    <string name="unit_pace">/km</string>
+    <string name="placeholder_distance">0.00</string>
+    <string name="placeholder_time">00:00</string>
+    <string name="placeholder_pace">--:--</string>
+
+    <string name="run_detail_title">Run details</string>
+    <string name="action_back">Back</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="status_paused">Paused</string>
+    <string name="gps_searching">Searching for GPS signal…</string>
+    <string name="location_off_hint">Location is off. Turn it on so your route can be recorded.</string>
+    <string name="location_off_action">Settings</string>
+    <string name="detail_no_route">Too short a run to draw a route.</string>
+
+    <!-- Kept literal: attribution is a legal notice and is not translated. -->
+    <string name="map_attribution" translatable="false">© OpenStreetMap contributors · OpenFreeMap</string>
+    <string name="map_unavailable">Map unavailable — recording continues.</string>
+    <string name="map_retry">Retry</string>
+    <string name="map_recenter">Recenter on route</string>
+
+    <string name="notification_channel_name">Run tracking</string>
+    <string name="notification_channel_description">Shows your run while it is being recorded</string>
+    <string name="notification_title_recording">Run in progress</string>
+    <string name="notification_title_paused">Run paused</string>
+    <string name="notification_starting">Preparing run…</string>
+    <string name="notification_text">%1$s km · %2$s</string>
+
+    <string name="permission_title">Location needed</string>
+    <string name="permission_body">Simple Runner uses precise location to measure your distance and draw your route. Location is only read while a run is active.</string>
+    <string name="permission_denied">Location permission is required to track a run.</string>
+    <string name="permission_grant">Allow location</string>
+    <string name="permission_open_settings">Open app settings</string>
+
+    <string name="home_run_in_progress">Run in progress</string>
+    <string name="home_run_paused">Run paused</string>
+    <string name="home_unfinished_run">Unfinished run</string>
+    <string name="home_unfinished_hint">This run was interrupted. Pick it back up where it stopped, or discard it.</string>
+    <string name="action_resume_run">Resume</string>
+    <string name="action_discard">Discard</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="discard_title">Discard this run?</string>
+    <string name="discard_body">The recorded route and stats for this run will be deleted.</string>
+</resources>

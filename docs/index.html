@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Runner — a GPS run recorder that stays on your phone</title>
+<meta name="description" content="Distance, moving time, pace and your route on a map. Android, local-only, no account. Download the APK or get it on Google Play.">
+<meta name="theme-color" content="#f6fbf4">
+<link rel="icon" href="img/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Simple Runner">
+<meta property="og:description" content="A GPS run recorder that stays on your phone. Distance, time, pace, route. No account, no cloud.">
+<meta property="og:image" content="img/icon-192.png">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+      <div class="brand-cell">
+        <a class="brand" href="./" aria-label="Simple Runner, home">
+          <svg viewBox="0 0 108 108" aria-hidden="true" focusable="false">
+            <rect width="108" height="108" fill="#0E1511"/>
+            <path d="M34 70 L47 52 L60 63 L74 38" fill="none" stroke="#8CD5AE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="34" cy="70" r="6" fill="#8CD5AE"/>
+            <circle cx="74" cy="38" r="7" fill="#F6FBF4"/>
+          </svg>
+          <b>Simple Runner</b>
+          <i>v1.0.0</i>
+        </a>
+      </div>
+      <nav class="site-nav" aria-label="Sections">
+        <a href="#screens">Screens</a>
+        <a href="#limits">Limits</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="nav-cta" href="#download">Download</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 0.0 ---------------------------------------------------------------- -->
+  <section class="hero section row" aria-labelledby="hero-title">
+    <div class="rail" aria-hidden="true">
+      <span class="marker"><span>0.0</span></span>
+    </div>
+
+    <div class="hero-body">
+      <div class="hero-copy">
+        <p class="mono eyebrow">Android · Local only · Apache-2.0</p>
+
+        <h1 id="hero-title">Distance, time, pace. On a map. <em>On your phone.</em></h1>
+
+        <p class="hero-lede">
+          Simple Runner records a run with GPS and keeps it on the device.
+          No account, no sync, no subscription. The only thing it asks of you
+          is to press start.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#download">
+            Download APK
+            <svg class="glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M8 1v9M4.5 6.5 8 10l3.5-3.5M2 14h12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+          <a class="btn btn--ghost" href="https://play.google.com/store/apps/details?id=com.wichosu.simplerunner">
+            Get it on Google&nbsp;Play
+          </a>
+        </div>
+
+        <p class="mono hero-note">
+          <span>Android 8.0+</span>
+          <span>About 60 MB</span>
+          <span>Free, no ads</span>
+        </p>
+      </div>
+
+      <figure class="shot hero-shot">
+        <img src="img/live.png" width="720" height="1280"
+             alt="The live run screen: a map with a green route line, and distance 0.16 km, time 00:54, pace 5:45 per km above it.">
+        <figcaption>
+          <b>Live</b>
+          <span>00:54 · 5:45 /km</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 0.5 ---------------------------------------------------------------- -->
+  <section class="section row hairline" id="screens" aria-labelledby="screens-title">
+    <div class="rail" aria-hidden="true">
+      <span class="marker"><span>0.5</span></span>
+    </div>
+
+    <div class="body">
+      <div class="section-head">
+        <p class="mono eyebrow">01 / Screens</p>
+        <h2 id="screens-title">Three screens.<br>That is the whole app.</h2>
+        <p>
+          Start, watch, look back. There is no dashboard, no feed, no streak to
+          keep alive, and nothing to scroll through before you can run.
+        </p>
+      </div>
+
+      <div class="shots">
+        <figure class="shot">
+          <img src="img/home.png" width="720" height="1280"
+               alt="History screen listing three runs: 0.67 km, 1.31 km and 0.41 km, each with its date and duration.">
+          <figcaption>
+            <b>01 &nbsp;After</b>
+            <span>0.41 – 1.31 km</span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="img/live.png" width="720" height="1280"
+               alt="During a run: distance 0.16 km, moving time 00:54 and pace 5:45 per km, above a live map following the route.">
+          <figcaption>
+            <b>02 &nbsp;During</b>
+            <span>Live map</span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="img/detail.png" width="720" height="1280"
+               alt="A finished run: 1.31 km in 07:24 at 5:40 per km, with the full route drawn on the map and fitted to the screen.">
+          <figcaption>
+            <b>03 &nbsp;Review</b>
+            <span>Fitted route</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1.0 ---------------------------------------------------------------- -->
+  <section class="section row hairline" id="numbers" aria-labelledby="numbers-title">
+    <div class="rail" aria-hidden="true">
+      <span class="marker"><span>1.0</span></span>
+    </div>
+
+    <div class="body">
+      <div class="section-head">
+        <p class="mono eyebrow">02 / Numbers</p>
+        <h2 id="numbers-title">Three numbers, and what they actually measure.</h2>
+        <p>
+          Everything else is a timestamp in the database. These are the ones you
+          read while breathing hard, so they are the ones worth getting right.
+        </p>
+      </div>
+
+      <dl class="defs">
+        <div class="def">
+          <dt>
+            <span class="def-k">Distance</span>
+            <span class="def-v">1.31<i>km</i></span>
+          </dt>
+          <dd>
+            Added up between accepted GPS fixes. A fix with worse than 35 m of
+            accuracy is dropped, a move under one metre is ignored, and a jump
+            that would imply 43 km/h is treated as noise rather than speed — so
+            standing at a crossing does not add metres.
+          </dd>
+        </div>
+
+        <div class="def">
+          <dt>
+            <span class="def-k">Moving time</span>
+            <span class="def-v">07:24</span>
+          </dt>
+          <dd>
+            Wall-clock time spent recording, with pauses excluded. Pausing at a
+            light stops the clock and the distance together, and the gap between
+            the two halves is never counted as running.
+          </dd>
+        </div>
+
+        <div class="def">
+          <dt>
+            <span class="def-k">Pace</span>
+            <span class="def-v">5:40<i>/km</i></span>
+          </dt>
+          <dd>
+            Moving time divided by distance, in minutes per kilometre. It reads
+            <code>--:--</code> below 100 m, before the number means anything, and
+            when the result would fall outside 2:00–30:00 /km.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 1.5 ---------------------------------------------------------------- -->
+  <section class="section row hairline" id="limits" aria-labelledby="limits-title">
+    <div class="rail" aria-hidden="true">
+      <span class="marker"><span>1.5</span></span>
+    </div>
+
+    <div class="body">
+      <div class="section-head">
+        <p class="mono eyebrow">03 / Limits</p>
+        <h2 id="limits-title">What it does not do.</h2>
+        <p>
+          Each of these is deliberate. A run recorder that grows a feed, a
+          subscription and a social graph stops being a run recorder.
+        </p>
+      </div>
+
+      <dl class="nots">
+        <div class="not">
+          <dt>Nothing leaves the phone</dt>
+          <dd>
+            No account, no cloud backup, no sync between devices. Runs live in
+            the app's private database and disappear when you uninstall it.
+          </dd>
+        </div>
+
+        <div class="not">
+          <dt>No trackers</dt>
+          <dd>
+            No analytics, no ads, no crash reporting, no third-party SDKs. The
+            only network request the app makes is for map tiles.
+          </dd>
+        </div>
+
+        <div class="not">
+          <dt>No always-on location</dt>
+          <dd>
+            Location is read while a run is recording, from a foreground service
+            with a visible notification. There is no “allow all the time”
+            permission to grant.
+          </dd>
+        </div>
+
+        <div class="not">
+          <dt>No coaching</dt>
+          <dd>
+            No auto-pause, splits, audio cues, heart rate or elevation gain. It
+            records what the GPS reports and shows it back without advice.
+          </dd>
+        </div>
+
+        <div class="not">
+          <dt>No delete button</dt>
+          <dd>
+            A finished run cannot be removed from inside the app yet. That is a
+            gap in this version, not a principle; uninstalling clears
+            everything.
+          </dd>
+        </div>
+
+        <div class="not">
+          <dt>No map offline</dt>
+          <dd>
+            Tiles come from <strong>OpenFreeMap</strong>. Without a connection
+            the map is blank while recording carries on, and the route appears
+            as soon as tiles load. The area you are looking at is requested from
+            OpenFreeMap, which sees your IP address; nothing about the run is
+            sent. More in the <a href="privacy.html">privacy note</a>.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 2.0 / FINISH ------------------------------------------------------- -->
+  <section class="download" id="download" aria-labelledby="download-title">
+   <div class="row">
+    <div class="rail" aria-hidden="true">
+      <span class="marker marker--finish"><span>2.0 · Finish</span></span>
+    </div>
+
+    <div class="download-body">
+      <div class="download-copy">
+        <p class="mono eyebrow">04 / Download</p>
+        <h2 id="download-title">Get Simple Runner.</h2>
+        <p>
+          The APK is the same build Google Play serves, signed with the same app
+          signing key, so it installs over a Play copy and updates normally. If
+          Play offers a newer version, Play wins.
+        </p>
+        <p>
+          Android will ask you to allow installs from this browser the first
+          time. That is the normal sideload prompt, not a warning about this
+          file.
+        </p>
+      </div>
+
+      <div class="download-actions">
+        <a class="btn" href="download/simple-runner-1.0.0.apk" download>
+          Download APK 1.0.0
+          <svg class="glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M8 1v9M4.5 6.5 8 10l3.5-3.5M2 14h12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </a>
+
+        <a class="btn btn--ghost btn--store" href="https://play.google.com/store/apps/details?id=com.wichosu.simplerunner">
+          <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 2.5 20 12 4 21.5Z" fill="currentColor"/>
+          </svg>
+          <span class="store-text">
+            <small>Get it on</small>
+            <strong>Google Play</strong>
+          </span>
+        </a>
+
+        <dl class="download-meta">
+          <div><dt>Version</dt><dd><b>1.0.0</b></dd></div>
+          <div><dt>Size</dt><dd><b>About 60 MB</b></dd></div>
+          <div><dt>Requires</dt><dd><b>Android 8.0+</b></dd></div>
+          <div><dt>License</dt><dd><b>Apache-2.0</b></dd></div>
+        </dl>
+      </div>
+    </div>
+   </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-body">
+      <div class="footer-mark">
+        <svg viewBox="0 0 108 108" aria-hidden="true" focusable="false">
+          <rect width="108" height="108" fill="#0E1511"/>
+          <path d="M34 70 L47 52 L60 63 L74 38" fill="none" stroke="#8CD5AE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="34" cy="70" r="6" fill="#8CD5AE"/>
+          <circle cx="74" cy="38" r="7" fill="#F6FBF4"/>
+        </svg>
+        <div>
+          <strong>Simple Runner</strong>
+          <p>
+            A running recorder that stays on your phone. Source, issues and the
+            full license live in the repository.
+          </p>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Elsewhere">
+        <a href="https://github.com/wichosu/simple-runner">Source</a>
+        <a href="https://github.com/wichosu/simple-runner/issues">Issues</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/wichosu/simple-runner/blob/main/LICENSE">Apache-2.0</a>
+      </nav>
+    </div>
+
+    <p class="colophon">
+      © 2026 Simple Runner · No cookies, no analytics, no JavaScript ·
+      Map data © OpenStreetMap contributors, tiles by OpenFreeMap
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

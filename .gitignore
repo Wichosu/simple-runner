@@ -1,0 +1,22 @@
+*.iml
+.gradle/
+.kotlin/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.keystore
+*.jks
+!debug.keystore
+
+# The website's download is the one APK that must be committed: it is the file
+# docs/index.html links to. Without this, the download silently never ships.
+!docs/download/*.apk
+
+# Upload-key credentials: never commit.
+keystore.properties

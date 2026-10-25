@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy note — Simple Runner</title>
+<meta name="description" content="Simple Runner stores runs on your phone and sends nothing about them anywhere. What is stored, what the map requests, and what is never collected.">
+<meta name="theme-color" content="#f6fbf4">
+<link rel="icon" href="img/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+      <div class="brand-cell">
+        <a class="brand" href="./" aria-label="Simple Runner, home">
+          <svg viewBox="0 0 108 108" aria-hidden="true" focusable="false">
+            <rect width="108" height="108" fill="#0E1511"/>
+            <path d="M34 70 L47 52 L60 63 L74 38" fill="none" stroke="#8CD5AE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="34" cy="70" r="6" fill="#8CD5AE"/>
+            <circle cx="74" cy="38" r="7" fill="#F6FBF4"/>
+          </svg>
+          <b>Simple Runner</b>
+          <i>Privacy</i>
+        </a>
+      </div>
+      <nav class="site-nav" aria-label="Sections">
+        <a href="index.html#limits">Limits</a>
+        <a href="index.html#download">Download</a>
+        <a class="nav-cta" href="./">Home</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="row">
+    <div class="rail" aria-hidden="true">
+      <span class="marker"><span>Privacy</span></span>
+    </div>
+
+    <article class="doc">
+      <p class="mono eyebrow">Document · Privacy</p>
+      <h1>Privacy note</h1>
+
+      <p class="doc-meta">
+        <span>Effective 25 October 2026</span>
+        <span>Version 1.0.0</span>
+        <span>com.wichosu.simplerunner</span>
+      </p>
+
+      <p>
+        <strong>Simple Runner records runs on your phone and sends nothing
+        about them anywhere.</strong> There is no account, no server belonging
+        to the project, and no way for anyone — including the person who wrote
+        the app — to see your runs.
+      </p>
+
+      <h2>What is stored on your phone</h2>
+      <p>
+        For each run the app keeps the data needed to draw it back: start and
+        end time, distance, moving time, pace, and the GPS fixes that survived
+        filtering. For each fix that means latitude, longitude, timestamp,
+        reported accuracy and which part of the run it belongs to.
+      </p>
+      <p>
+        This lives in the app's private database. It is not readable by other
+        apps, and Android's automatic cloud backup is switched off for Simple
+        Runner, so it is not copied to Google's servers by the operating
+        system. Uninstalling the app, or clearing its storage in Android
+        settings, deletes all of it.
+      </p>
+
+      <h2>Location</h2>
+      <p>
+        The app asks for <em>precise</em> and <em>approximate</em> location the
+        first time you start a run, and reads location only while a run is
+        recording or paused. It does not ask for background location: there is
+        no “allow all the time” option to grant, and nothing is tracked when a
+        run is not active.
+      </p>
+      <p>
+        Fixes are processed and stored on the device. They are never uploaded,
+        aggregated or used to build a profile.
+      </p>
+
+      <h2>The map, and the one network request</h2>
+      <p>
+        Simple Runner has the internet permission for a single purpose:
+        fetching map tiles. Whenever a map is on screen, the area you are
+        looking at is requested from <a href="https://openfreemap.org/">OpenFreeMap</a>,
+        which serves map data from
+        <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+        contributors. Like any web service, OpenFreeMap and its hosting
+        provider receive your IP address and the coordinates of the tiles
+        requested, from which the approximate map area can be inferred.
+      </p>
+      <p>
+        <strong>No run data is ever included in those requests</strong> — not
+        your route, not your speed, not the run's identifier. Recording,
+        history, and the numbers work with no connection at all; only the map
+        needs one.
+      </p>
+
+      <h2>Notifications</h2>
+      <p>
+        While a run is recording, a notification shows its status and offers
+        pause and finish. It is generated on the device. The notification
+        permission is used for that notification and nothing else.
+      </p>
+
+      <h2>What is never done</h2>
+      <ul>
+        <li>No accounts, sign-in, email addresses or profiles.</li>
+        <li>No analytics, telemetry, advertising or crash reporting.</li>
+        <li>No third-party SDKs that collect data. The map renderer, MapLibre, runs locally.</li>
+        <li>No selling, sharing or publishing of anything, because nothing leaves the device.</li>
+        <li>No access to contacts, photos, files, microphone, camera or other apps.</li>
+      </ul>
+
+      <h2>This website</h2>
+      <p>
+        This site is a set of static files. It sets no cookies, runs no
+        scripts, loads no fonts or images from third parties, and has no
+        analytics. The host — currently GitHub Pages — processes standard
+        request logs, including IP addresses, under
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        The app is not directed at children and collects no personal data from
+        anyone, of any age.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        If a future version changes any of this — for example by adding an
+        optional export or sync — this note will be updated before that
+        version ships, and the date at the top will change. The full history
+        is visible in the repository.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions or corrections belong in the issue tracker:
+        <a href="https://github.com/wichosu/simple-runner/issues">github.com/wichosu/simple-runner/issues</a>.
+      </p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-body">
+      <div class="footer-mark">
+        <svg viewBox="0 0 108 108" aria-hidden="true" focusable="false">
+          <rect width="108" height="108" fill="#0E1511"/>
+          <path d="M34 70 L47 52 L60 63 L74 38" fill="none" stroke="#8CD5AE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="34" cy="70" r="6" fill="#8CD5AE"/>
+          <circle cx="74" cy="38" r="7" fill="#F6FBF4"/>
+        </svg>
+        <div>
+          <strong>Simple Runner</strong>
+          <p>
+            A running recorder that stays on your phone. Source, issues and the
+            full license live in the repository.
+          </p>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Elsewhere">
+        <a href="https://github.com/wichosu/simple-runner">Source</a>
+        <a href="https://github.com/wichosu/simple-runner/issues">Issues</a>
+        <a href="./">Home</a>
+        <a href="https://github.com/wichosu/simple-runner/blob/main/LICENSE">Apache-2.0</a>
+      </nav>
+    </div>
+
+    <p class="colophon">
+      © 2026 Simple Runner · No cookies, no analytics, no JavaScript ·
+      Map data © OpenStreetMap contributors, tiles by OpenFreeMap
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="Simple Runner">
+  <rect width="108" height="108" fill="#0E1511"/>
+  <path d="M34 70 L47 52 L60 63 L74 38" fill="none" stroke="#8CD5AE" stroke-width="6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="34" cy="70" r="6" fill="#8CD5AE"/>
+  <circle cx="74" cy="38" r="7" fill="#F6FBF4"/>
+</svg>
