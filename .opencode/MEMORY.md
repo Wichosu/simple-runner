@@ -11,6 +11,9 @@
 - **Website APK = Play-signed universal APK (2026-10-25):** download from Play Console → Test & release → Latest releases and bundles → bundle → Downloads. Same cert as Play installs, so no self-managed app signing key and no uninstall to switch channels.
 - **Play App Signing auto-registers apps for Android developer verification** (enforced from Sept 30 2026 in pilot regions, global 2027, sideloads included), so a Play-signed site APK installs without the unverified-developer flow. A self-signed site APK would need separate registration.
 
+## Publishing
+- **Public repo is `git@github.com:Wichosu/simple-runner`, site served from `/docs` via Pages (2026-11-11):** commits must keep the `54341712+Wichosu@users.noreply.github.com` author — the original commit was amended to keep a personal address out of public history, and repo-local `user.email` is already set to it. Don't `--reset-author` from a global gmail config, and don't hand-write the personal address into docs, the store listing's contact field, or the About panel unless asked.
+
 ## Emulator testing
 - **UI automation needs a woken screen (2026-10-25):** the emulator sleeps and taps silently do nothing. Before any tap run `adb shell svc power stayon true`, `input keyevent KEYCODE_WAKEUP`, `wm dismiss-keyguard`, and confirm `mCurrentFocus` is the app.
 - **Pull the DB with tar, not per-file copies (2026-10-25):** use `adb exec-out run-as com.wichosu.simplerunner tar -cf - databases`; copying files individually returns stale data (once showed 0 points while Room saw all inserts). Delete `*.db-shm` before opening with host `sqlite3`.
